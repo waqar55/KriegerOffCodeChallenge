@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-09T15:43:29.654Z",
+    "end": "2022-08-09T15:46:01.529Z",
+    "duration": 151875,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "79a9845a-202c-4316-8319-2dda34391ba1",
+      "title": "",
+      "fullFile": "cypress\\integration\\Registration.feature",
+      "file": "cypress\\integration\\Registration.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4631a832-e3a7-414a-a4ec-f07e04b7a5a3",
+          "title": "Registration for a user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Opening Application for registring a new user account",
+              "fullTitle": "Registration for a user Opening Application for registring a new user account",
+              "timedOut": null,
+              "duration": 29026,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f3020f01-4d8f-45ec-a237-dd048a90ec12",
+              "parentUUID": "4631a832-e3a7-414a-a4ec-f07e04b7a5a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Move to the registration page to create a new user account",
+              "fullTitle": "Registration for a user Move to the registration page to create a new user account",
+              "timedOut": null,
+              "duration": 10756,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "37241336-4a21-43b9-9a60-28ec2967c173",
+              "parentUUID": "4631a832-e3a7-414a-a4ec-f07e04b7a5a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Registering a new user after entering the data",
+              "fullTitle": "Registration for a user Registering a new user after entering the data",
+              "timedOut": null,
+              "duration": 23963,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "ae645cad-cf2e-47f5-b051-a324550712a8",
+              "parentUUID": "4631a832-e3a7-414a-a4ec-f07e04b7a5a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Password Reset after registering the user",
+              "fullTitle": "Registration for a user Password Reset after registering the user",
+              "timedOut": null,
+              "duration": 73010,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Registration.feature/Registration for a user -- Password Reset after registering the user (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: No matching messages found in time. By default, only messages received in the last hour are checked (use receivedAfter to override this).",
+                "estack": "Error: No matching messages found in time. By default, only messages received in the last hour are checked (use receivedAfter to override this).\n    at eval (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Registration.feature:17466:26)",
+                "diff": null
+              },
+              "uuid": "e84eb594-0d64-4267-9462-3a05eaf89a69",
+              "parentUUID": "4631a832-e3a7-414a-a4ec-f07e04b7a5a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3020f01-4d8f-45ec-a237-dd048a90ec12",
+            "37241336-4a21-43b9-9a60-28ec2967c173",
+            "ae645cad-cf2e-47f5-b051-a324550712a8"
+          ],
+          "failures": [
+            "e84eb594-0d64-4267-9462-3a05eaf89a69"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 136755,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

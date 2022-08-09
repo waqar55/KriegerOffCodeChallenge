@@ -1,0 +1,62 @@
+[
+  {
+    "description": "    I want to add 5 items to the wishlist",
+    "keyword": "Feature",
+    "name": "Adding Items to Wishlist",
+    "line": 1,
+    "id": "adding-items-to-wishlist",
+    "tags": [],
+    "uri": "Shopping.feature",
+    "elements": [
+      {
+        "id": "adding-items-to-wishlist;add-items-to-the-wishlist-and-add-them-to-the-basket",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add items to the wishlist and add them to the basket",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User logs in with correct email/ password",
+            "result": {
+              "status": "passed",
+              "duration": 14922000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clicks on 5 items from the given list to add them in wishlist",
+            "result": {
+              "status": "failed",
+              "duration": 49616000000,
+              "error_message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `//div[@data-wish-list-entry-number=\"814169\" and @class=\"wishlistIcon wishlistIcon--filled wishlistIcon--pointer\"]`, but never found it.\n    at Context.eval (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:131:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User then adds all 5 items to the basket",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The added items in the basket and their prices should be correct",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

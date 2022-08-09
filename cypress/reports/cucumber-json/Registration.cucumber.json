@@ -1,0 +1,183 @@
+[
+  {
+    "description": "    I want to register a user account by signing up in the website",
+    "keyword": "Feature",
+    "name": "Registration for a user",
+    "line": 1,
+    "id": "registration-for-a-user",
+    "tags": [],
+    "uri": "Registration.feature",
+    "elements": [
+      {
+        "id": "registration-for-a-user;opening-application-for-registring-a-new-user-account",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Opening Application for registring a new user account",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Hit the URL of the website",
+            "result": {
+              "status": "passed",
+              "duration": 7475000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "URL should be opened successfully",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "registration-for-a-user;move-to-the-registration-page-to-create-a-new-user-account",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Move to the registration page to create a new user account",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is on the home page where Registration Icon is visible",
+            "result": {
+              "status": "passed",
+              "duration": 4714000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User clicks on Registration Icon",
+            "result": {
+              "status": "passed",
+              "duration": 3650000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User clicks on Registration button to move forward",
+            "result": {
+              "status": "passed",
+              "duration": 1644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Registration page should be opened",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "registration-for-a-user;registering-a-new-user-after-entering-the-data",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Registering a new user after entering the data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "User is on Registration page",
+            "result": {
+              "status": "passed",
+              "duration": 2183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User adds data in the fields for account registration and continue with the registration process",
+            "result": {
+              "status": "passed",
+              "duration": 10702000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User should be registered successfully",
+            "result": {
+              "status": "passed",
+              "duration": 2959000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "registration-for-a-user;password-reset-after-registering-the-user",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Password Reset after registering the user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User moves to the login page",
+            "result": {
+              "status": "passed",
+              "duration": 6703000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "User clicks on Forgot Password link to request for a password reset",
+            "result": {
+              "status": "passed",
+              "duration": 2488000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "User gets an email and changes the password",
+            "result": {
+              "status": "passed",
+              "duration": 60453000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Password should be reset to a new one",
+            "result": {
+              "status": "passed",
+              "duration": 11859000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

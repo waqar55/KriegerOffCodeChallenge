@@ -1,0 +1,104 @@
+[
+  {
+    "description": "    I want to login a user with a new and old password",
+    "keyword": "Feature",
+    "name": "Login with the user",
+    "line": 1,
+    "id": "login-with-the-user",
+    "tags": [],
+    "uri": "UserLogin.feature",
+    "elements": [
+      {
+        "id": "login-with-the-user;application-login-after-reset-password",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Application Login after reset password",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Hit the URL of the website",
+            "result": {
+              "status": "passed",
+              "duration": 32393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User moves to the login page",
+            "result": {
+              "status": "passed",
+              "duration": 9087000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User adds the email/ reset password data in the login page",
+            "result": {
+              "status": "passed",
+              "duration": 2568000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should be logged in successfully",
+            "result": {
+              "status": "failed",
+              "duration": 4640000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.deinbett.de/login' to equal 'https://www.deinbett.de/'\n    + expected - actual\n\n    -'https://www.deinbett.de/login'\n    +'https://www.deinbett.de/'\n\n    at _callee4$ (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:110:27)\n    at tryCatch (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:680:17)\n    at Generator.eval [as _invoke] (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:660:24)\n    at Generator.eval [as next] (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:711:21)\n    at asyncGeneratorStep (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:522:24)\n    at _next (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:544:9)\n    at eval (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:551:7)\nat new Promise (<anonymous>)\n    at Context.eval (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:540:12)\n    at Context.resolveAndRunStepDefinition (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:16945:29)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-with-the-user;application-login-with-old-password",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Application Login with Old Password",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User moves to login page",
+            "result": {
+              "status": "passed",
+              "duration": 10196000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User adds the email/ old password data in the login page",
+            "result": {
+              "status": "passed",
+              "duration": 3103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User should not be logged in successfully",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `label[id=\"loginEmail-error\"]`, but never found it.\n    at _callee7$ (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:166:47)\n    at tryCatch (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:680:17)\n    at Generator.eval [as _invoke] (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:660:24)\n    at Generator.eval [as next] (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:711:21)\n    at asyncGeneratorStep (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:522:24)\n    at _next (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:544:9)\n    at eval (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:551:7)\nat new Promise (<anonymous>)\n    at Context.eval (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:540:12)\n    at Context.resolveAndRunStepDefinition (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\UserLogin.feature:16945:29)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

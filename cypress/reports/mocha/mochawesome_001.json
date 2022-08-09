@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-09T15:47:29.614Z",
+    "end": "2022-08-09T15:48:37.955Z",
+    "duration": 68341,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33ada87c-3736-45c1-a9b6-123d37866fab",
+      "title": "",
+      "fullFile": "cypress\\integration\\Shopping.feature",
+      "file": "cypress\\integration\\Shopping.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7af5a366-f232-4f99-8ff4-a15ce34940bd",
+          "title": "Adding Items to Wishlist",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add items to the wishlist and add them to the basket",
+              "fullTitle": "Adding Items to Wishlist Add items to the wishlist and add them to the basket",
+              "timedOut": null,
+              "duration": 51167,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Shopping.feature/Adding Items to Wishlist -- Add items to the wishlist and add them to the basket (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.deinbett.de/login' to equal 'https://www.deinbett.de/'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.deinbett.de/login' to equal 'https://www.deinbett.de/'\n    at _callee$ (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:78:27)\n    at tryCatch (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:740:17)\n    at Generator.eval [as _invoke] (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:720:24)\n    at Generator.eval [as next] (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:771:21)\n    at asyncGeneratorStep (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:582:24)\n    at _next (https://www.deinbett.de/__cypress/tests?p=cypress\\integration\\Shopping.feature:604:9)",
+                "diff": "- 'https://www.deinbett.de/login'\n+ 'https://www.deinbett.de/'\n"
+              },
+              "uuid": "ba8fa3d0-ed2a-4845-91dd-3ffd19492561",
+              "parentUUID": "7af5a366-f232-4f99-8ff4-a15ce34940bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ba8fa3d0-ed2a-4845-91dd-3ffd19492561"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51167,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
